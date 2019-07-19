@@ -1,0 +1,78 @@
+<!-- Author: Sean Barker                         -->
+<!-- Date:   December 1, 2018                    -->
+<!-- Description: Summit Beverages on Tap Project-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SBT - Beverages</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Local Beverage Supply">
+  <meta name="keywords" content="HTML,CSS,JavaScript,Beverages,Local,Fort Wayne, Indiana">
+  <meta name="author" content="Sean Barker">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Unlock" rel="stylesheet">
+  <script src="ajax-beverage.js"></script>
+</head>
+<body>
+<figure id='wrapper'>
+<div id='head'>
+  <img src="images/logo.jpg" alt="Summit Beverages on Tap">
+</div>
+<div id="nav">
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="about.html">ABOUT</a></li>
+  <li><a href="packages.html">PACKAGES</a></li>
+   <li><a href="beverages.html">BEVERAGES</a></li>
+   <li><a href="contact.html">CONTACT</a></li>
+   <li><a href="location.html">LOCATION</a></li>
+</ul>
+</div>
+<div class="bevimg">
+	<img src="images/bevinfo.png" alt="BEVERAGES">
+</div>
+<div class="bevdrop">
+<div id="bevbox">
+<div id="bevdisplay">
+	<div id="scb"><img src="images/sumCB1.png" alt="Summit Cold Brew logo"></div>
+	<div id="crk"><img src="images/crKom1.png" alt="crossroads logo"></div>
+	<div id="buk"><img src="images/bukal1.png" alt="Bukal logo"></div>
+</div>
+</div>
+<div class="bevpick">
+<fieldset id="pickbev">
+  <legend>Company</legend>
+  <select id="companyCode" name="companyCode">
+	    <option value="" disabled="disabled" selected>--Choose One--</option>
+	 <option value="SCB">Summit Cold Brew</option>
+	 <option value="CRK">Crossroads Kombutcha</option>
+	 <option value="BBC">Bukàl Beverage Co.</option>
+  </select>
+</fieldset>
+<fieldset id="ajaxFieldset">
+  <legend>Beverage</legend>
+  <select id="beverage" name="beverage">
+	<option>--Choose One--</option>
+  </select>
+</fieldset>
+</div>
+<fieldset id="bevinfo">
+  <legend>Description</legend>
+  <p id="catalog"></p>
+</fieldset>
+</div>
+<footer>
+<div class="footer"> 
+	<h2>SUMMIT BEVERAGES ON TAP</h2>
+	<p>&copy; <span id="year"></span>. All rights reserved.</p>
+</div>
+</footer>
+<script src='eventlisteners.js'></script>
+<script>
+   var currentYear = new Date().getFullYear();
+   var dateContainer = document.getElementById("year");
+   dateContainer.innerHTML = currentYear;
+</script>
+</figure>
+</body>
+</html>

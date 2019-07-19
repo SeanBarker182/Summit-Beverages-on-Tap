@@ -1,0 +1,63 @@
+<!-- Author: Sean Barker                         -->
+<!-- Date:   December 1, 2018                    -->
+<!-- Description: Summit Beverages on Tap Project-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SBT - About</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Local Beverage Supply">
+  <meta name="keywords" content="HTML,CSS,JavaScript,Beverages,Local,Fort Wayne, Indiana">
+  <meta name="author" content="Sean Barker">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Unlock" rel="stylesheet">
+</head>
+<body>
+<figure id='wrapper'>
+<div id='head'>
+  <img src="images/logo.jpg" alt="Summit Beverages on Tap">
+</div>
+<div id="nav">
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="about.html">ABOUT</a></li>
+  <li><a href="packages.html">PACKAGES</a></li>
+   <li><a href="beverages.html">BEVERAGES</a></li>
+   <li><a href="contact.html">CONTACT</a></li>
+   <li><a href="location.html">LOCATION</a></li>
+</ul>
+</div>
+<div class="HeadImg" id="AboutHeadImg"> 
+  <img src="images/SBTlg.png" alt="Cold brew pouring in glass">
+</div>
+<h1 id="about-us-head">ABOUT US</h1>
+<p id="mission">"Our mission is to connect our great city of Fort Wayne, Indiana to locally hand crafted beverages through beverage sales, catering, and delivery system rentals."</p>
+<p id="mission-cap"> Summit Beverages Mission Statement </p>
+<div class="about-photos">
+  <div id="sprk"><img src="images/sparkle.jpg" alt="Glass of sparkling water"></div>
+<div id="kom"><img src="images/kom.jpg" alt="Glasses of kombucha"></div>
+<div id="cb"><img src="images/coldbrew.jpg" alt="Glass of cold brew"></div>
+</div><br>
+<div id="story">
+<div class="ourstory-head">
+  <img src="images/sumbot.jpg" alt="Summit Cold Brew bottle">
+</div>
+<div id="ourstory">
+<h2 class="about-phead">Our Story</h2>
+<p class="about-p">Summit Beverages on Tap was created for one reason, to get great beverages to the people of Fort Wayne, Indiana. We search the community to find beverages made locally and make it possible for them to be served in local offices, events, or right inside your home. Our vision came from visiting area farmers markets and events and being inspired by the growing community of makers who work every day to provide you with nothing but the best. Working directly with our beverage manufactures allows us to be involved throughout the whole process to make sure you're getting the best beverages the city has to offer. We currently are working with non-alcoholic drink crafters only, but plan to expand to alcoholic drinks in the near future. We encourage you to follow us on social media to stay up to date with the latest information from us. Feel free to send us a message via our contact page and we’ll get you connected to one of our beverage specialist as soon as possible. </p>
+</div>
+</div>
+<footer>
+<div class="footer"> 
+	<h2>SUMMIT BEVERAGES ON TAP</h2>
+	<p>&copy; <span id="year"></span>. All rights reserved.</p>
+</div>
+</footer>
+<script>
+   var currentYear = new Date().getFullYear();
+   var dateContainer = document.getElementById("year");
+   dateContainer.innerHTML = currentYear;
+</script>
+</figure>
+</body>
+</html>

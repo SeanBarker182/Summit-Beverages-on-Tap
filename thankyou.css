@@ -1,0 +1,113 @@
+/* Global style*/
+* {
+	
+  letter-spacing: .2px;
+}
+#wrapper  { margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+      }
+
+/*Heading style*/
+figure {
+	background-color: white;
+	margin: 0;
+	padding: 5px;
+}
+#head img {
+	width: 100px;
+  margin-bottom: 1%;
+  margin-right: auto;
+  margin-left: auto;
+}
+div#head {
+  width: 100%;
+  background-color: black;
+}
+
+/*Nav Styling*/
+#nav ul {
+  list-style-type: none;
+  display: inline;
+}
+#nav a:link {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+#nav a:visited{
+	text-decoration: none;
+	color: black;
+  background-color: white;
+}
+#nav li a:hover {
+	color: #333;
+}
+#nav li {
+	float: left;
+  padding: 5px 12.5px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  font-size: 1.5vmax;
+  background-color: white;
+}
+#nav {
+  position: static;
+  height: 4%;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+#nav ul {
+  display: inline-block;
+}
+/*Body*/
+#ThankYouImg img {
+  width: 35%;
+  padding: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+.HeadImg {
+  background-image: url("images/indexheader.jpg");
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  margin: 3% 0;
+}
+p {
+  margin: 1% 3%;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.list li {
+  list-style-type: circle;
+  font-family: sans-serif;
+  margin: 0 5%;
+}
+/*Footer*/
+
+.footer {
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  background-color: black;
+  margin-top: 5%;
+  clear: both;
+  position: static;
+}
+.footer h2 {
+  font-size: 15px;
+  font-weight: 900;
+}
+.footer p {
+  font-size: 10px;
+}

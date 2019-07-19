@@ -1,0 +1,88 @@
+<!-- Author: Sean Barker                         -->
+<!-- Date:   December 1, 2018                    -->
+<!-- Description: Summit Beverages on Tap Project-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SBT - Contact</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Local Beverage Supply">
+  <meta name="keywords" content="HTML,CSS,JavaScript,Beverages,Local,Fort Wayne, Indiana">
+  <meta name="author" content="Sean Barker">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Unlock" rel="stylesheet">
+</head>
+<body>
+<figure id='wrapper'>
+<div id='head'>
+  <img src="images/logo.jpg" alt="Summit Beverages on Tap">
+</div>
+<div id="nav">
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="about.html">ABOUT</a></li>
+  <li><a href="packages.html">PACKAGES</a></li>
+   <li><a href="beverages.html">BEVERAGES</a></li>
+   <li><a href="contact.html">CONTACT</a></li>
+   <li><a href="location.html">LOCATION</a></li>
+</ul>
+</div>
+<div class="HeadImg" id="AboutHeadImg"> 
+  <img src="images/SBTlg.png" alt="Cold brew pouring in glass">
+</div>
+<div id="boxone">
+  <h1 id="contacthead">Contact Us</h1>
+  <form action="contactus.php" method="post" novalidate=novalidate>
+<div class="contact-box">
+<p id="errorMsg"></p>
+<fieldset id="left">
+ <legend>Contact Info</legend>
+ <h4 class="contact"><span class="grid3">Name</span>
+    <span class="grid1"><input type="text" name="fname" placeholder="First Name" size="15" maxlength="25" autofocus /></span>
+    <span class="grid1"><input type="text" name="lname" placeholder="Last Name" size="15" maxlength="25" /></span>
+ </h4>
+ <h4><span class="grid3">Email</span>
+    <span class="grid2"><input type="email" name="email" placeholder="user@domain.com" size="35" /></span>
+ </h4>
+ <h4><span class="grid3">Phone</span>
+    <span class="grid2"><input type="tel" name="phone" placeholder="555-555-5555" /></span>
+ </h4> 
+</fieldset>
+<fieldset class="right">
+ <legend>Packages</legend>
+ <p class="twoColumn" id="pckList">
+<label class="pcklist"><input id="rentals" type="checkbox" name="packages[]" value="0">Rentals</label>
+<label class="pcklist"><input id="events" type="checkbox" name="packages[]" value="1">Events</label>
+<label class="pcklist"><input id="subscriptions" type="checkbox" name="packages[]" value="2">Subscriptions</label>
+<label class="pcklist"><input id="other" type="checkbox" name="packages[]" value="3">Other</label>
+</p>
+</fieldset>
+<fieldset>
+ <legend>Beverages</legend>
+ <p class="twoColumn" id="bevList"></p>
+</fieldset>
+<fieldset>
+ <legend>Comments</legend>
+    <textarea id="comments" name="comments" placeholder="Enter comments here.."></textarea>
+</fieldset>
+</div>
+<p id="submit"><input type="submit" name="btnSubmit" value="Submit" /></p>
+</form>
+
+</div>
+<footer>
+<div class="footer"> 
+  <h2>SUMMIT BEVERAGES ON TAP</h2>
+  <p>&copy; <span id="year"></span>. All rights reserved.</p>
+</div>
+</footer>
+<script>
+   var currentYear = new Date().getFullYear();
+   var dateContainer = document.getElementById("year");
+   dateContainer.innerHTML = currentYear;
+</script>
+<script src="form.js"></script>
+<script src="read-storage.js"></script>
+</figure>
+</body>
+</html>

@@ -1,0 +1,497 @@
+/* Author: Sean Barker                         
+   Date:   December 1, 2018                    
+   Description: Summit Beverages on Tap Project*/
+/* Global style*/
+* {
+	margin: 0;
+	padding: 0;
+  letter-spacing: .2px;
+}
+#wrapper  { margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+      }
+
+/*Heading style*/
+figure {
+	background-color: white;
+	margin: 0;
+	padding: 5px;
+}
+#head img {
+	width: 100px;
+  margin-bottom: 1%;
+  margin-right: auto;
+  margin-left: auto;
+}
+div#head {
+  width: 100%;
+  background-color: black;
+}
+
+/*Nav Styling*/
+ul {
+  list-style-type: none;
+  display: inline;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+a:visited{
+	text-decoration: none;
+	color: black;
+  background-color: white;
+}
+#nav li a:hover {
+	color: #333;
+}
+#nav li {
+	float: left;
+  padding: 5px 12.5px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  font-size: 1.5vmax;
+  background-color: white;
+}
+#nav {
+  position: static;
+  height: 4%;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+#nav ul {
+  display: inline-block;
+}
+
+/* Body Styling */
+body {
+  background-color: white;
+}
+.HeadImg {
+  background-image: url("images/indexheader.jpg");
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div img {
+  width: 100%;
+  padding-top: 25px;
+}
+#servselector li {
+  float: left;
+  padding: 5px 12.5px;
+  font-size: 1.5vw;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  background-color: white;
+}
+#servselector {
+  position: static;
+  height: 4%;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+#servselector ul {
+  display: inline-block;
+
+}
+#rentals {
+  text-decoration: none;
+  color: gray;
+}
+#events {
+  text-decoration: none;
+  color: gray;
+}
+#subscription {
+  text-decoration: none;
+  color: gray;
+}
+#packages {
+  text-decoration: none;
+  color: black;
+}
+
+#servicesinfo {
+  float: left;
+  width: 100%;
+  display: block;
+  background-color: white;
+  
+
+}
+.servicestxt {
+  padding: 5% 12.5%;
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  display: block;
+  text-align: left;
+  position: static;
+}
+
+.servicestxt p {
+  color: gray;
+  font-family: sans-serif;
+}
+.servicesimg img {
+  width: 25%;
+  padding: 5% 15%;
+  float: right;
+  background-color: white;
+  display: block;
+}
+.learn-more-btn {
+  background: none;
+  text-decoration: none;
+  border: 1px solid black;
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  padding: 1% 1.75%;
+  float: left;
+  display: block;
+  position: static;
+  text-align: center;
+}
+
+.bevimg {
+  background-image: url("images/sumbottle2.jpg");
+  height: 100%; 
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+#bevhead {
+  background-color: white;
+  text-align: left;
+  font: 25px 'Arial';
+  padding-top: 2px;
+  padding-left:12%;
+  font-weight: 900;
+}
+
+#bevbox img {
+  margin: 1%;
+  width: 31.33%;
+  float: left;
+  background-color: #CCC;
+}
+
+/*ABOUT US*/
+
+#about-us-head {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 45px;
+}
+
+#AboutHeadImg img {
+  width: 35%;
+  padding: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#mission {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  color: gray;
+  margin: 1% 20%;
+}
+#mission-cap {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 13px;
+  color: gray;
+  margin: 1% 20%;
+}
+
+.about-photos img{
+  width: 25.66%;
+  float: left;
+  display: block;
+}
+
+#sprk img{
+  margin-left: 8%;
+  margin-right: 1%;
+}
+
+#kom img{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+#cb img{
+  margin-left: 1%;
+  margin-right: 2%;
+}
+
+.ourstory-head {
+  width: 35%;
+  padding: 5% 2% 3% 5%;
+  float: right;
+  display: inline-block;
+
+}
+
+.about-phead {
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 5%;
+
+}
+.about-p {
+  font-family: sans-serif;
+
+}
+#ourstory {
+  margin: 8% 1% 5% 15%;
+  line-height: 20px;
+}
+#story {
+  float: left;
+  width: 70%;
+  padding: 3% 1% 0 10%;
+}
+
+/*Form Styles*/
+
+.grid1   { 
+  width: 80px; 
+  display: block;
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 35px;
+  margin-left: 10px;
+}
+
+.grid2 { 
+  width: 240px; 
+  display: block;
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.grid3 {   
+   width: 50px; 
+   display: block;
+   float: left;
+   margin-bottom: 10px;
+   margin-right: 10px;
+   margin-left: 10px;
+}
+h4 { 
+  clear: both; 
+  font-family: 'Oswald', sans-serif;
+}
+
+legend {
+  font-family: 'Oswald', sans-serif;
+}
+.contact-box {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+#contacthead {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  margin-left: 75px;
+  margin-top: 15px
+}
+input[type="checkbox"]  { 
+  margin-right: 10px; 
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+p#errorMsg  { 
+  color: red;
+  height: 15px; 
+}
+textarea {
+  height: 100px;
+  width: 300px;
+  margin: 10px 25px;
+}
+p#submit  { 
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.bevlist{
+  font-family: sans-serif;
+  font-size: 1vw;
+  clear: both;
+}
+.pcklist{
+  font-family: sans-serif;
+  font-size: 1vw;
+  clear: both;
+}
+
+/*Packages Styles*/
+
+.KomHeadImg {
+  background-image: url("images/komevent.jpg");
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#myDIV {
+  display: none;
+  color: black;
+  padding: 2.5% 71.5% 1.5% 1%;
+  background-color: white;
+}
+p#myDIV {
+  padding-right: 25%;
+}
+#eventDIV {
+  display: none;
+  color: black;
+  padding: 2.5% 71.5% 1.5% 1%;
+  background-color: white;
+}
+p#eventDIV {
+  padding-right: 25%;
+}
+#subDIV {
+  display: none;
+  color: black;
+  padding: 2.5% 71.5% 1.5% 1%;
+  background-color: white;
+}
+p#subDIV {
+  padding-right: 25%;
+}
+a.packservice {
+  padding: 1% 97% 1% 1%;
+  background: gray;
+  opacity: 0.5;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  color: white;
+  margin-top: .25%;
+  display: block;
+}
+#packhead {
+  font-family: 'Oswald', sans-serif;
+}
+.divinfo {
+ width: 250%;
+ display: block;
+ background-color: white;
+ margin-left: 50%;
+ overflow: auto;
+}
+p.errorMsg  { 
+  color: red;
+  height: 15px; 
+}
+.underline a:link a:visited {
+  color: red;
+  text-decoration: underline;
+}
+/*Beverages Styles*/
+.bevdrop {
+  background-image: url("images/breathe.jpg");
+  height: 100%; 
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  padding-bottom: 5%;
+}
+.bevpick {
+  text-align: center;
+  color: white;
+  border-top: 4px solid white;
+  background:rgba(100,100,100,0.5);
+  display: block;
+  margin-right: 5%;
+  margin-left: 5%;
+  font-size: 2vmax;
+  border-bottom: 4px solid white;
+  clear: both;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  margin-top: 5%;
+}
+#pickbev {
+  text-align: center;
+  font-size: 2vmax;
+}
+select[name="beverage"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 25%;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+  border: 2px solid white;
+  background-color: black;
+}
+select[name="companyCode"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 25%;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+  border: 2px solid white;
+  background-color: black;
+}
+#bevinfo { 
+  text-align: center;
+  color: white;
+  border-top: 4px solid white;
+  background:rgba(100,100,100,0.5);
+  display: block;
+  margin: 3% 5%;
+  font-size: 2vmax;
+  border-bottom: 4px solid white;
+  clear: both;
+  padding: 5% 2%;
+  font-family: sans-serif;
+}
+
+/*Footer*/
+
+.footer {
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  background-color: black;
+  margin-top: 0;
+  clear: both;
+  position: static;
+}
+.footer h2 {
+  font-size: 15px;
+  font-weight: 900;
+}
+.footer p {
+  font-size: 10px;
+}

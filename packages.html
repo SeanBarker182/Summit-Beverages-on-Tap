@@ -1,0 +1,105 @@
+<!-- Author: Sean Barker                         -->
+<!-- Date:   December 1, 2018                    -->
+<!-- Description: Summit Beverages on Tap Project-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SBT - Packages</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Local Beverage Supply">
+  <meta name="keywords" content="HTML,CSS,JavaScript,Beverages,Local,Fort Wayne, Indiana">
+  <meta name="author" content="Sean Barker">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Unlock" rel="stylesheet">
+</head>
+<body>
+<figure id='wrapper'>
+<div id='head'>
+  <img src="images/logo.jpg" alt="Summit Beverages on Tap">
+</div>
+<div id="nav">
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="about.html">ABOUT</a></li>
+  <li><a href="packages.html">PACKAGES</a></li>
+   <li><a href="beverages.html">BEVERAGES</a></li>
+   <li><a href="contact.html">CONTACT</a></li>
+   <li><a href="location.html">LOCATION</a></li>
+</ul>
+</div>
+<div class="HeadImg" id="AboutHeadImg"> 
+  <img src="images/SBTlg.png" alt="Cold brew pouring in glass">
+</div>
+<div id="pckback">
+<h1 id="packhead">Packages</h1>
+<div>
+  <a href="#0" class="packservice" id="rent">Rentals</a>
+</div>
+<div id="myDIV">
+<div class="divinfo">
+<div class="servicesimg">
+  <img src="images/kegerator.jpg" alt="Kegerator in office">
+</div>
+<div class="servicestxt">
+  <h2> Rentals </h2>
+<hr>
+<br>
+  <p>Rent professional beverage serving equpment for your next event. This is our self serve option.</p><br>
+  <a href="#0" id="renBut">Request Information</a>
+  <p id="renErr" class='errorMsg'></p>
+</div>
+</div>
+</div>
+<div>
+  <a href="#0" class="packservice" id="event">Events</a>
+</div>
+<div id="eventDIV">
+<div class="divinfo">
+<div class="servicesimg">
+  <img src="images/event.jpg" alt="Summit tasting event">
+</div>
+<div class="servicestxt">
+  <h2> Events </h2>
+<hr>
+<br>
+  <p>This is our full service package. We craft our display to match the aesthetic of your event. Our beverage specialist will setup and serve for as long as you need us.</p><br>
+  <a href="#0" id="evtBut">Request Information</a>
+  <p id="evtErr" class=errorMsg></p>
+</div>
+</div>
+</div>
+<div>
+  <a href="#0" class="packservice" id="subscriptions">Subscriptions</a>
+</div>
+<div id="subDIV">
+<div class="divinfo">
+<div class="servicesimg">
+  <img src="images/subimg.jpg" alt="INitro cold brew glass">
+</div>
+<div class="servicestxt">
+  <h2> Subscriptions </h2>
+<hr>
+<br>
+  <p>Our subscription packages come with equipment and includes monthly maintenance. Pick your beverage and frequency and we'll come replace your keg(s) accordingly.</p><br>
+  <a href="#0" id="subBut">Request Information</a>
+  <p id="subErr" class=errorMsg></p>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="footer"> 
+	<h2>SUMMIT BEVERAGES ON TAP</h2>
+	<p>&copy; <span id="year"></span>. All rights reserved.</p>
+</div>
+</footer>
+<script src="packages.js"></script>
+<script src="webstorage.js"></script>
+<script>
+   var currentYear = new Date().getFullYear();
+   var dateContainer = document.getElementById("year");
+   dateContainer.innerHTML = currentYear;
+</script>
+</figure>
+</body>
+</html>
